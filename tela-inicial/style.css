@@ -86,37 +86,38 @@ header {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: 'Inter', 'sans-serif';
+    font-family: Arial;
     gap: 16px;
 }
 
 .card {
     background-color: #fff;
-    width: 100px;
-    height: 260px;
+    width: 340px;
+    height: 600px;
     border-radius: 12px;
     box-shadow: 4px 4px 12px #aaaa;
 }
 
-.card div-card {
+.card div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 4px;
-    height: 50%;
+    height: 120%;
 }
 
-.card div-card h1 {
-    font-size: 1.2rem;
-}
-
-.card div-card h2 {
+.card h1 {
     font-size: .9rem;
     color: #aaaa;
 }
 
-.card div-card button {
+.card h2 {
+    font-size: .9rem;
+    color: #aaaa;
+}
+
+.card button {
     background-color: #2192FF;
     height: 30px;
     border: none;
@@ -125,6 +126,7 @@ header {
     color: #fff;
     font-size: 1rem;
     font-weight: bold;
+    border-radius: 4px;
 }
 
 @media screen and (max-width: 730px) {
