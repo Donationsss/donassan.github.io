@@ -25,9 +25,6 @@ body {
     background-size: cover; */
     background: rgb(83,6,122);
     background: linear-gradient(177deg, rgba(83,6,122,1) 0%, rgba(140,24,193,1) 100%);
-    color: white;
-    display: flex;
-    flex-direction: column;
 }
 
 header {
@@ -76,15 +73,14 @@ header {
 
 .login-button button {
     border: none;
-    background-color: rgb(83,6,122);
-    background: linear-gradient(177deg, rgba(83,6,122,1) 0%, rgba(140,24,193,1) 100%);
+    background-color: #fff;
     padding: 10px 15px;
     border-radius: 5px;
 }
 
 .login-button button a {
     text-decoration: none;
-    color: #fff;
+    color: #7f37c9;
     font-weight: 500;
     font-size: 1.1rem;
 }
@@ -106,15 +102,30 @@ header {
     gap: 16px;
 }
 
-.card {
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0;
+}
+
+.card-1, .card-2, .card-3 {
+    flex: 1;
+    max-width: 340px;
+    margin: 0 10px;
+}
+
+.card-1 {
     background-color: #8813978a;
     width: 340px;
-    height: 600px;
+    height: 450px;
     border-radius: 12px;
     box-shadow: 4px 4px 12px #aaaa;
 }
 
-.card div {
+.card-1 div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -123,17 +134,95 @@ header {
     height: 120%;
 }
 
-.card h1 {
+.card-1 h1 {
     font-size: .9rem;
     color: #aaaa;
 }
 
-.card h2 {
+.card-1 h2 {
     font-size: .9rem;
     color: #aaaa;
 }
 
-.card button {
+.card-1 button {
+    background-color: #9f16c2ee;
+    height: 30px;
+    border: none;
+    padding: 4px;
+    width: 80%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.card-2 {
+    background-color: #8813978a;
+    width: 340px;
+    height: 450px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #aaaa;
+}
+
+.card-2 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    height: 120%;
+}
+
+.card-2 h1 {
+    font-size: .9rem;
+    color: #aaaa;
+}
+
+.card-2 h2 {
+    font-size: .9rem;
+    color: #aaaa;
+}
+
+.card-2 button {
+    background-color: #9f16c2ee;
+    height: 30px;
+    border: none;
+    padding: 4px;
+    width: 80%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.card-3 {
+    background-color: #8813978a;
+    width: 340px;
+    height: 450px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #aaaa;
+}
+
+.card-3 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    height: 120%;
+}
+
+.card-3 h1 {
+    font-size: .9rem;
+    color: #aaaa;
+}
+
+.card-3 h2 {
+    font-size: .9rem;
+    color: #aaaa;
+}
+
+.card-3 button {
     background-color: #9f16c2ee;
     height: 30px;
     border: none;
